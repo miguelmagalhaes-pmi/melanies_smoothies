@@ -2,7 +2,7 @@
 import streamlit as st
 import os
 import requests
-smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")  
 #    st.text(smoothiefroot_response)
 sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_with=True)
 from snowflake.snowpark.functions import col
